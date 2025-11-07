@@ -1,124 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical"
     android:padding="16dp"
-    android:background="#f5f7fa">
+    android:background="#ffffff"
+    android:layout_margin="8dp">
 
     <TextView
+        android:id="@+id/textViewName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="RecyclerView Student Manager"
-        android:textSize="24sp"
+        android:text="Student Name"
+        android:textSize="18sp"
         android:textStyle="bold"
         android:textColor="#2c3e50"
-        android:gravity="center"
-        android:layout_marginBottom="16dp" />
+        android:layout_marginBottom="8dp" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginBottom="8dp">
-
-        <EditText
-            android:id="@+id/editTextStudent"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:hint="Enter student name"
-            android:inputType="textCapWords"
-            android:padding="12dp"
-            android:textSize="16sp"
-            android:layout_marginEnd="8dp" />
-
-        <Button
-            android:id="@+id/buttonAdd"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="ADD"
-            android:textSize="14sp"
-            android:backgroundTint="#27ae60"
-            android:textColor="#FFFFFF"
-            android:minWidth="80dp" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginBottom="12dp"
-        android:gravity="center_vertical">
+        android:layout_marginBottom="6dp">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Layout:"
-            android:textSize="16sp"
-            android:textColor="#2c3e50"
-            android:layout_marginEnd="8dp" />
+            android:text="D: "
+            android:textSize="16sp" />
 
-        <Spinner
-            android:id="@+id/spinnerLayout"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:layout_marginEnd="8dp" />
-
-        <Button
-            android:id="@+id/buttonClear"
+        <TextView
+            android:id="@+id/textViewDept"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="CLEAR"
-            android:textSize="12sp"
-            android:backgroundTint="#e74c3c"
-            android:textColor="#FFFFFF"
-            android:padding="8dp" />
+            android:text="Department"
+            android:textSize="14sp"
+            android:textColor="#34495e" />
 
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/textViewInfo"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Total Students: 0"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        android:textColor="#e67e22"
-        android:gravity="center"
-        android:background="#ffffff"
-        android:padding="12dp"
-        android:layout_marginBottom="12dp"
-        android:elevation="2dp" />
+        android:orientation="horizontal"
+        android:layout_marginBottom="6dp">
 
-    <TextView
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="G: "
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textViewGrade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Grade"
+            android:textSize="14sp"
+            android:textColor="#34495e" />
+
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Tap to view details • Long press to delete"
-        android:textSize="13sp"
-        android:textStyle="italic"
-        android:textColor="#7f8c8d"
-        android:gravity="center"
-        android:layout_marginBottom="8dp" />
+        android:orientation="horizontal">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerView"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:background="#ffffff"
-        android:padding="8dp"
-        android:elevation="2dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="E: "
+            android:textSize="16sp" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Week 09: RecyclerView Introduction"
-        android:textSize="12sp"
-        android:textColor="#bdc3c7"
-        android:gravity="center"
-        android:layout_marginTop="12dp" />
+        <TextView
+            android:id="@+id/textViewEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textSize="14sp"
+            android:textColor="#34495e" />
+
+    </LinearLayout>
 
 </LinearLayout>
