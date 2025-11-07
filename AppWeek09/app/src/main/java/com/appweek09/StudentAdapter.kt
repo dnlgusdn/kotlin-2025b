@@ -8,7 +8,7 @@ import com.appweek09.databinding.ItemStudentBinding
 
 class StudentAdapter (
     private val studentList: List<Student>,
-    private val onItemClick: (Student, Int) -> UInt,
+    private val onItemClick: (Student, Int) -> Unit,
     private val onItemLongClick: (Int) -> Unit
 ) : RecyclerView.Adapter<StudentAdapter.StudentViewHolder>(){
 
